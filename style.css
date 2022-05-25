@@ -16,9 +16,11 @@ body {
     border: 5px solid #abcea1;
     border-radius: 8px;
     padding: 15px;
-    
+    overflow-y: scroll;
   }
-  
+  .app::-webkit-scrollbar {
+    width: 0 !important;
+  }
   
   
   #addNew {
@@ -41,13 +43,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 14px;
-    overflow-y: scroll;
-    height: 320px;
   }
-  #tasks::-webkit-scrollbar {
-    width: 0 !important;
-  }
-  
+ 
   #tasks div {
     border: 3px solid #abcea1;
     background-color: #e2eede;
@@ -55,7 +52,6 @@ body {
     padding: 5px;
     display: grid;
     gap: 4px;
-    height:140px;
   }
   
   
